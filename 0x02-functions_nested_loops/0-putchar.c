@@ -1,20 +1,16 @@
-#include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
-*main - function prints text as output
-*
-*Return:return 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
+
 int main(void)
 {
-	char school[10] = "_putchar";
 
-	int i;
+printf("_putchar\n");
 
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(school[i]);
-	}
-	_putchar(10);
-	return (0);
+return (0);
 }
