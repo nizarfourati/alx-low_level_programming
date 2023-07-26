@@ -1,25 +1,26 @@
-include "holberton.h"
-
+#include "holberton.h"
 /**
- * _memset - this funtion fills memory with a constant byte.
- * @b: a constant byte.
- * @n: number of bytes.
- * @s: pointers to memory.
- *
- * Return: A pointer to memory area s.
+ * _strcat - concatenates 2 strings.
+ * @dest: string with concatenation
+ * @src: string to be concatenated
+ * Return: Always 0.
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strcat(char *dest, char *src)
 {
-	unsigned int i;
+	int lengthD, lengthS;
 
-	i = 0;
-	while (i < n)
+	lengthD = 0;
+	lengthS = 0;
+
+	while (*(dest + lengthD) != '\0')
+		lengthD++;
+
+	while (*(src + lengthS) != '\0' && lengthD < 97)
 	{
-		s[i] = b;
-		i++;
+		*(dest + lengthD) = *(src + lengthS);
+		lengthD++;
+		lengthS++;
 	}
-
-	return (s);
+	*(dest + lengthD) = '\0';
+	return (dest);
 }
-
-
