@@ -1,25 +1,24 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * _strncpy - copie une chaîne
- * @dest : valeur d'entrée
- * @src : valeur d'entrée
- * @n : valeur d'entrée
- *
- * Retour : destination
- */
+ * _strncpy - This is my main
+ * @dest: This is my dest
+ * @src: This is my source
+ * @n: This is my N
+ *
+ *Return: THis is my return
+ */
+
 char *_strncpy(char *dest, char *src, int n)
 {
-        entier j ;
-        j = 0 ;
-        tandis que (j < n && src[j] != '\0')
-        {
-                destination[j] = source[j] ;
-                j++;
-        }
-        tandis que (j < n)
-        {
-                destination[j] = '\0' ;
-                j++;
-        }
-        retour (dest);
+	int b;
+
+	for (b = 0; b < n && src[b] != '\0' ; b++)
+	{
+	dest[b] = src[b];
+	}
+	for (; b  < n; b++)
+	{
+		dest[b] = '\0';
+	}
+	return (dest);
 }

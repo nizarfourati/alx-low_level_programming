@@ -1,29 +1,27 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _strncat - concaténer deux chaînes
- * en utilisant au plus n octets de src
- * @dest : valeur d'entrée
- * @src : valeur d'entrée
- * @n : valeur d'entrée
- *
- * Retour : destination
- */
+ * _strncat - THis is the main
+ * @dest: This is the dest
+ * @src: This is the src
+ * @n: Thi is n
+ * Return: This is my return
+ */
 char *_strncat(char *dest, char *src, int n)
 {
-        int je ;
-        entier j ;
-        je = 0 ;
-        tandis que (dest[i] != '\0')
-        {
-                je++ ;
-        }
- j = 0 ;
-        tandis que (j < n && src[j] != '\0')
-        {
-        destination[i] = src[j] ;
-        je++ ;
-        j++;
-        }
-        destination[i] = '\0' ;
-        retour (dest);
+	int a, b;
+
+	for (a = 0; dest[a] != '\0'; a++)
+	{
+	}
+	for (b = 0; b < n && src[b] != '\0'; b++)
+	{
+		dest[a] = src[b];
+		a++;
+	}
+	if (b < n)
+	{
+	dest[a] = '\0';
+	}
+	return (dest);
 }

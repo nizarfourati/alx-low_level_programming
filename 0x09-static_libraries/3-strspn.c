@@ -1,27 +1,31 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * _strspn - Point d'entrée
- * @s : entrée
- * @accept : saisie
- * Retour : Toujours 0 (Succès)
- */
-entier non signé _strspn (car * s, car * accepter)
+ * _strspn - This is my function
+ * @s: This is the string literal
+ * @accept: This is the second string
+ *
+ * Return: This is the equal string to S
+ */
+
+unsigned int _strspn(char *s, char *accept)
 {
-        entier non signé n = 0 ;
-        int r;
-        tandis que (*s)
-        {
-                pour (r = 0; accepter[r]; r++)
-                {
-                        si (*s == accepter[r])
-                        {
-                                n++ ;
-                                casser;
-                        }
-                        sinon si (accepte[r + 1] == '\0')
-                                retour (n);
-                }
-                s++ ;
-        }
-        retour (n);
+	unsigned int a, b, c;
+
+	c = 0;
+	for (a = 0; s[a] != '\0'; a++)
+	{
+		for (b = 0; accept[b] != '\0'; b++)
+		{
+			if (accept[b] == s[a])
+			{
+				c++;
+				break;
+			}
+		}
+		if (accept[b] != s[a])
+		{
+		break;
+		}
+	}
+	return (c);
 }

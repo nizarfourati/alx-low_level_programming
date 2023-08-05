@@ -1,13 +1,19 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _puts - imprime une chaîne, suivie d'une nouvelle ligne, sur stdout
- * @str : chaîne à imprimer
- */
+ * _puts - Escribir un texto
+ *
+ * @str: This is my entry
+ *
+ */
+
 void _puts(char *str)
 {
-        tandis que (*str != '\0')
-        {
-                _putchar(*str++);
-        }
-                _putchar('\n');
+	int a;
+
+	for (a = 0; str[a] != '\0'; a++)
+	{
+		_putchar(str[a]);
+	}
+	_putchar('\n');
 }

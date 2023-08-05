@@ -1,10 +1,20 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _islower - vérifie les caractères minuscules
- * @c : le caractère à vérifier
- * Retour : 1 si c est en minuscule, 0 sinon
- */
-int _islow(int c)
+ * _islower - Check if the entry is in lower.
+ * @c: This is the entry
+ *
+ * Return: Always 0.
+ */
+
+int _islower(int c)
 {
-        retour (c >= 'a' && c <= 'z');
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

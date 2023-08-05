@@ -1,22 +1,22 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * _strcmp - compare les valeurs de chaîne
- * @s1 : valeur d'entrée
- * @s2 : valeur d'entrée
- *
- * Retour : s1[i] - s2[i]
- */
-int _strcmp(car *s1, car *s2)
+ * _strcmp - This is my function
+ * @s1: This is my entry
+ * @s2: This is my entry again
+ * Return: This is my result
+ */
+
+int _strcmp(char *s1, char *s2)
 {
-        int je ;
-        je = 0 ;
-        tandis que (s1[i] != '\0' && s2[i] != '\0')
-        {
-                si (s1[i] != s2[i])
-                {
-                        retour (s1[i] - s2[i]);
-                }
-        je++ ;
-        }
-        retour (0);
+	for (; (*s1 != '\0' && *s2 != '\0') && *s1 == *s2; s1++, s2++)
+	{
+	}
+	if (*s1 == *s2)
+	{
+		return (0);
+	}
+	else
+	{
+		return (*s1 - *s2);
+	}
 }

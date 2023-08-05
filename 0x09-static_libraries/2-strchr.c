@@ -1,18 +1,19 @@
-#include "main.h"
+#include "holberton.h"
 #include <stddef.h>
 /**
- * _strchr - Point d'entrée
- * @s : entrée
- * @c : entrée
- * Retour : Toujours 0 (Succès)
- */
+ * _strchr - This is my funcion
+ * @s: This my string of char
+ * @c: This is my character
+ * Return: This is my resulti
+ */
 char *_strchr(char *s, char c)
 {
-        int je = 0 ;
-        pour (; s[i] >= '\0'; i++)
-        {
-                si (s[i] == c)
-                        retour (&s[i]);
-        }
-        retour (0);
+	for (; ; s++)
+	{
+		if (*s == c)
+			return (s);
+		if (*s == 0)
+			return (NULL);
+	}
+	return (NULL);
 }

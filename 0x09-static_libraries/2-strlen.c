@@ -1,16 +1,18 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _strlen - renvoie la longueur d'une chaîne
- * @s : chaîne
- * Retour : longueur
- */
-entier _strlen(car *s)
+ * _strlen - This function is equal to strlen
+ *
+ * @s: this is my entry
+ *
+ * Return: the las character
+ */
+int _strlen(char *s)
 {
-        entier longi = 0 ;
-        tandis que (*s != '\0')
-        {
-                longi++ ;
-                s++ ;
-        }
-        retour (longi);
+	int a;
+
+	for (a = 0; s[a] != '\0' ; a++)
+	{
+	}
+	return (a);
 }

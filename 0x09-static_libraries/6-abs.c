@@ -1,14 +1,26 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _abs - calcule la valeur absolue d'un entier
- * @n : l'entier à vérifier
- * Retour : la valeur absolue de int
- */
-entier _abs(entier n)
+ * _abs - This is a absolute value
+ *
+ * @a: This is the entry
+ *
+ * Return: Always 0.
+ */
+
+int _abs(int a)
 {
-        si (n >= 0)
-        {
-                retour (n);
-        }
-        retour (-n);
+	if (a > 0)
+	{
+		return (a);
+	}
+	else if (a < 0)
+	{
+		a = a * -1;
+		return (a);
+	}
+	else
+	{
+		return (a);
+	}
 }
