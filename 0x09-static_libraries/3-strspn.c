@@ -1,28 +1,27 @@
 #include "main.h"
 /**
- * _strspn - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
- */
-unsigned int _strspn(char *s, char *accept)
+ * _strspn - Point d'entrée
+ * @s : entrée
+ * @accept : saisie
+ * Retour : Toujours 0 (Succès)
+ */
+entier non signé _strspn (car * s, car * accepter)
 {
-	unsigned int n = 0;
-	int r;
-
-	while (*s)
-	{
-		for (r = 0; accept[r]; r++)
-		{
-			if (*s == accept[r])
-			{
-				n++;
-				break;
-			}
-			else if (accept[r + 1] == '\0')
-				return (n);
-		}
-		s++;
-	}
-	return (n);
+        entier non signé n = 0 ;
+        int r;
+        tandis que (*s)
+        {
+                pour (r = 0; accepter[r]; r++)
+                {
+                        si (*s == accepter[r])
+                        {
+                                n++ ;
+                                casser;
+                        }
+                        sinon si (accepte[r + 1] == '\0')
+                                retour (n);
+                }
+                s++ ;
+        }
+        retour (n);
 }

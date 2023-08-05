@@ -1,15 +1,14 @@
 #include "main.h"
 /**
-* _abs - prints the absolute value of a number
-*@i: number targeted
-*Return: returns 0
-*/
-int _abs(int i)
+ * _abs - calcule la valeur absolue d'un entier
+ * @n : l'entier à vérifier
+ * Retour : la valeur absolue de int
+ */
+entier _abs(entier n)
 {
-if (i > 0)
-return (i);
-else if (i < 0)
-return (-i);
-else
-return (0);
+        si (n >= 0)
+        {
+                retour (n);
+        }
+        retour (-n);
 }

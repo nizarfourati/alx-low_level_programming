@@ -1,26 +1,23 @@
 #include "main.h"
 /**
- * _strstr - Entry point
- * @haystack: input
- * @needle: input
- * Return: Always 0 (Success)
- */
-char *_strstr(char *haystack, char *needle)
+ * _strstr - Point d'entrée
+ * @haystack : entrée
+ * @aiguille : entrée
+ * Retour : Toujours 0 (Succès)
+ */
+char *_strstr(char *botte de foin, char *aiguille)
 {
-	for (; *haystack != '\0'; haystack++)
-	{
-		char *l = haystack;
-		char *p = needle;
-
-		while (*l == *p && *p != '\0')
-		{
-			l++;
-			p++;
-		}
-
-		if (*p == '\0')
-			return (haystack);
-	}
-
-	return (0);
+        for (; *meule de foin != '\0'; meule de foin++)
+        {
+                char *l = botte de foin ;
+                caractère *p = aiguille ;
+                tandis que (*l == *p && *p != '\0')
+                {
+                        l++ ;
+                        p++;
+                }
+                si (*p == '\0')
+                        retour (meule de foin);
+        }
+        retour (0);
 }

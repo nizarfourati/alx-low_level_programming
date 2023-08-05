@@ -1,16 +1,13 @@
 #include "main.h"
-
 /**
- * _puts - prints a string to stdout
- * @str: pointer to the string to print
- */
+ * _puts - imprime une chaîne, suivie d'une nouvelle ligne, sur stdout
+ * @str : chaîne à imprimer
+ */
 void _puts(char *str)
 {
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+        tandis que (*str != '\0')
+        {
+                _putchar(*str++);
+        }
+                _putchar('\n');
 }

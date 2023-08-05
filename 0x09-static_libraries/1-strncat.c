@@ -1,27 +1,29 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * _strncat - concatenate strings, defining the size of second string.
- * @dest: string with concatenation
- * @src: string to be concatenated
- * @n: size of second string
- * Return: Always 0.
- */
+ * _strncat - concaténer deux chaînes
+ * en utilisant au plus n octets de src
+ * @dest : valeur d'entrée
+ * @src : valeur d'entrée
+ * @n : valeur d'entrée
+ *
+ * Retour : destination
+ */
 char *_strncat(char *dest, char *src, int n)
 {
-	int lengthD, lengthS;
-
-	lengthD = 0;
-	lengthS = 0;
-
-	while (*(dest + lengthD) != '\0')
-		lengthD++;
-
-	while (*(src + lengthS) != '\0' && lengthD < 97 && lengthS < n)
-	{
-		*(dest + lengthD) = *(src + lengthS);
-		lengthD++;
-		lengthS++;
-	}
-	*(dest + lengthD) = '\0';
-	return (dest);
+        int je ;
+        entier j ;
+        je = 0 ;
+        tandis que (dest[i] != '\0')
+        {
+                je++ ;
+        }
+ j = 0 ;
+        tandis que (j < n && src[j] != '\0')
+        {
+        destination[i] = src[j] ;
+        je++ ;
+        j++;
+        }
+        destination[i] = '\0' ;
+        retour (dest);
 }

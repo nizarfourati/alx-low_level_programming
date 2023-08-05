@@ -1,13 +1,10 @@
 #include "main.h"
 /**
-*_islower - controls if a character is in lowercase
-*@c: character to be verified
-*Return: return 0 or 1
-*/
-int _islower(int c)
+ * _islower - vérifie les caractères minuscules
+ * @c : le caractère à vérifier
+ * Retour : 1 si c est en minuscule, 0 sinon
+ */
+int _islow(int c)
 {
-if (c >= 'a' && c <= 'z')
-return (1);
-
-return (0);
+        retour (c >= 'a' && c <= 'z');
 }

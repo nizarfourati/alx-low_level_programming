@@ -1,18 +1,25 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * _strncpy - concatenate strings, defining the size of second string.
- * @dest: string with concatenation
- * @src: string to be concatenated
- * @n: size of second string
- * Return: Always 0.
- */
+ * _strncpy - copie une chaîne
+ * @dest : valeur d'entrée
+ * @src : valeur d'entrée
+ * @n : valeur d'entrée
+ *
+ * Retour : destination
+ */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
-
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		*(dest + i) = *(src + i);
-	for ( ; i < n; i++)
-		*(dest + i) = '\0';
-	return (dest);
+        entier j ;
+        j = 0 ;
+        tandis que (j < n && src[j] != '\0')
+        {
+                destination[j] = source[j] ;
+                j++;
+        }
+        tandis que (j < n)
+        {
+                destination[j] = '\0' ;
+                j++;
+        }
+        retour (dest);
 }
